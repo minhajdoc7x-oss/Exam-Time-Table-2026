@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Timetable 2026 - Anas, Hashir & Minhaj</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            margin: 0;
+        }
+        .table-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 25px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 1000px;
+            text-align: center;
+        }
+
+        /* Profile Section */
+        .profile-section {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #edf2f7;
+        }
+        .profile-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            flex: 1;
+        }
+        .profile-img {
+            width: 85px;
+            height: 85px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #cbd5e0;
+            background-color: #f8fafc;
+        }
+
+        /* Student Name Colors */
+        .name-anas { color: #2563eb; font-weight: 800; font-size: 1.1rem; text-transform: uppercase; }
+        .name-hashir { color: #059669; font-weight: 800; font-size: 1.1rem; text-transform: uppercase; }
+        .name-minhaj { color: #d97706; font-weight: 800; font-size: 1.1rem; text-transform: uppercase; }
+
+        h2 {
+            color: #1a202c;
+            margin-bottom: 20px;
+            font-size: 1.4rem;
+        }
+
+        /* Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 2px solid #cbd5e0;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #cbd5e0;
+            padding: 12px 10px;
+            /* CENTER ALIGN ALL TEXT */
+            text-align: center; 
+        }
+        th {
+            background-color: #f8fafc;
+            color: #4a5568;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+        }
+        .date-col { font-weight: bold; background-color: #f7fafc; width: 110px; }
+        
+        .sslc { color: #2563eb; font-weight: 600; }
+        .p1 { color: #059669; font-weight: 600; }
+        .p2 { color: #d97706; font-weight: 600; }
+        .empty { color: #cbd5e1; text-align: center; }
+
+        tr:nth-child(even) { background-color: #fafbfc; }
+
+        /* --- DEVELOPED BY SECTION (High Speed Bounce) --- */
+        .dev-container {
+            margin-top: 25px;
+            padding: 10px;
+            background-color: transparent;
+        }
+        .dev-by {
+            font-size: 10px;
+            color: #718096;
+            letter-spacing: 2px;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        .minhaj-text span {
+            font-size: 18px;
+            color: #2563eb; /* Blue */
+            font-weight: 900;
+            display: inline-block;
+            animation: bounce 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite alternate;
+            text-shadow: 0 0 2px rgba(37, 99, 235, 0.2);
+            letter-spacing: 2px;
+        }
+
+        /* Animation delays */
+        .minhaj-text span:nth-child(2) { animation-delay: 0.05s; }
+        .minhaj-text span:nth-child(3) { animation-delay: 0.1s; }
+        .minhaj-text span:nth-child(4) { animation-delay: 0.15s; }
+        .minhaj-text span:nth-child(5) { animation-delay: 0.2s; }
+        .minhaj-text span:nth-child(6) { animation-delay: 0.25s; }
+
+        @keyframes bounce {
+            from { transform: translateY(0); }
+            to { transform: translateY(-10px); }
+        }
+
+        @media (max-width: 600px) {
+            .profile-img { width: 65px; height: 65px; }
+            th, td { padding: 8px 5px; font-size: 0.75rem; }
+            .date-col { width: 90px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="table-card">
+    <div class="profile-section">
+        <div class="profile-item">
+            <img src="https://via.placeholder.com/85" alt="Anas" class="profile-img">
+            <span class="name-anas">Anas</span>
+        </div>
+        <div class="profile-item">
+            <img src="https://via.placeholder.com/85" alt="Hashir" class="profile-img">
+            <span class="name-hashir">Hashir</span>
+        </div>
+        <div class="profile-item">
+            <img src="https://via.placeholder.com/85" alt="Minhaj" class="profile-img">
+            <span class="name-minhaj">Minhaj</span>
+        </div>
+    </div>
+
+    <h2>📅 Kerala Exam Timetable 2026</h2>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Day</th>
+                <th>SSLC (Anas)</th>
+                <th>+1 (Hashir)</th>
+                <th>+2 (Minhaj)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td class="date-col">05-03-2026</td><td>Thu</td><td class="sslc">Malayalam 1</td><td class="p1">English</td><td class="empty">-</td></tr>
+            <tr><td class="date-col">06-03-2026</td><td>Fri</td><td class="empty">-</td><td class="empty">-</td><td class="p2">Physics</td></tr>
+            <tr><td class="date-col">07-03-2026</td><td>Sat</td><td class="empty">-</td><td class="empty">-</td><td class="p2">Statistics</td></tr>
+            <tr><td class="date-col">09-03-2026</td><td>Mon</td><td class="sslc">English</td><td class="p1">Accountancy</td><td class="empty">-</td></tr>
+            <tr><td class="date-col">10-03-2026</td><td>Tue</td><td class="empty">-</td><td class="empty">-</td><td class="p2">Business Studies</td></tr>
+            <tr><td class="date-col">11-03-2026</td><td>Wed</td><td class="sslc">Malayalam 2</td><td class="p1">Second Language</td><td class="empty">-</td></tr>
+            <tr><td class="date-col">12-03-2026</td><td>Thu</td><td class="empty">-</td><td class="empty">-</td><td class="p2">Second Language</td></tr>
+            <tr><td class="date-col">13-03-2026</td><td>Fri</td><td class="sslc">Hindi</td><td class="p1">Business Studies</td><td class="empty">-</td></tr>
+            <tr><td class="date-col">16-03-2026</td><td>Mon</td><td class="sslc">Mathematics</td><td class="p1">Political Science</td><td class="empty">-</td></tr>
+            <tr><td class="date-col">17-03-2026</td><td>Tue</td><td class="empty">-</td><td class="empty">-</td><td class="p2">Mathematics</td></tr>
+            <tr><td class="date-col">18-03-2026</td><td>Wed</td><td class="sslc">Physics</td><td class="p1">Statistics</td><td class="empty">-</td></tr>
+            <tr><td class="date-col">19-03-2026</td><td>Thu</td><td class="empty">-</td><td class="empty">-</td><td class="p2">Economics</td></tr>
+            <tr><td class="date-col">23-03-2026</td><td>Mon</td><td class="sslc">Social Science</td><td class="empty">-</td><td class="empty">-</td></tr>
+            <tr><td class="date-col">24-03-2026</td><td>Tue</td><td class="empty">-</td><td class="empty">-</td><td class="p2">Computer Application</td></tr>
+            <tr><td class="date-col">25-03-2026</td><td>Wed</td><td class="sslc">Chemistry</td><td class="p1">Economics</td><td class="empty">-</td></tr>
+            <tr><td class="date-col">26-03-2026</td><td>Thu</td><td class="empty">-</td><td class="empty">-</td><td class="p2">Accountancy</td></tr>
+            <tr><td class="date-col">27-03-2026</td><td>Fri</td><td class="empty">-</td><td class="p1">Mathematics</td><td class="empty">-</td></tr>
+            <tr><td class="date-col">28-03-2026</td><td>Sat</td><td class="empty">-</td><td class="empty">-</td><td class="p2">English</td></tr>
+            <tr><td class="date-col">30-03-2026</td><td>Mon</td><td class="sslc">Biology</td><td class="empty">-</td><td class="empty">-</td></tr>
+        </tbody>
+    </table>
+
+    <div class="dev-container">
+        <div class="dev-by">DEVELOPED BY</div>
+        <div class="minhaj-text">
+            <span>M</span><span>I</span><span>N</span><span>H</span><span>A</span><span>J</span>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
